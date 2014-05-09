@@ -21,6 +21,7 @@ apt install
 ```
 
 **Image editing**
+
 To crop an image: right-click on it. Click on "open with" > "Shotwell viewer". This program has simple picture tools such as crop, red-eye, enhance, rotate.
 
 **Shortcuts**
