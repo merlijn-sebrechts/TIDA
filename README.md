@@ -88,12 +88,18 @@ GOOGLE TALK PLUGIN
 
 **Software Center**
 
+**Workaround**
 The software center is still extremely buggy and in a poor state. It crashes a lot on .deb files from the internet. I recommend setting gdebi as default application to open .deb packages.
 
 ```
 apt install gdebi
 ```
 Then go to "Files" right-click a .deb file. Click on "properties". Go to tab "open with". Click on gdebi package installer and click on "set as default". Be sure to do this in the "properties" window. Otherwise, you will not see the "set as default" option.
+
+**List of bugs**
+
+This is a list of all the software center bugs currently affecting me. Feel free add yourself to the affected list to get more traction
+   *[Free applications having "buy" button instead of "install"](https://bugs.launchpad.net/ubuntu/+source/software-center/+bug/968974)
 
 # Tweaks
 
