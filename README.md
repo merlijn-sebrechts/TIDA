@@ -99,7 +99,8 @@ Then go to "Files" right-click a .deb file. Click on "properties". Go to tab "op
 **List of bugs**
 
 This is a list of all the software center bugs currently affecting me. Feel free add yourself to the affected list to get more traction
-   *[Free applications having "buy" button instead of "install"](https://bugs.launchpad.net/ubuntu/+source/software-center/+bug/968974)
+
+   * [Free applications having "buy" button instead of "install"](https://bugs.launchpad.net/ubuntu/+source/software-center/+bug/968974) *Related:* [Why do I have to sign in into Ubuntu One when installing free apps](http://askubuntu.com/questions/319091/why-do-i-have-to-sign-into-ubunto-one-in-order-to-install-steam)
 
 # Tweaks
 
