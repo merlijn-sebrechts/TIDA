@@ -3,8 +3,6 @@ TIDA: Ubuntu 14.04 Trusty Tahr
 
 Things I Did After Installing Ubuntu. This is a reference for all the thing I do after a clean install of Ubuntu.
 
-
-
 # Useful commands and other tips:
 
 **Useful commands**
@@ -32,6 +30,26 @@ ctrl-alt-numpad_key
 # To search in the applications menu (very handy in gimp!)
 press alt and start typing
 ```
+
+# Bugfixes
+
+**Software Center**
+
+**Workaround**
+The software center is still extremely buggy and in a poor state. It crashes a lot on .deb files from the internet. I recommend setting gdebi as default application to open .deb packages.
+
+```
+apt install gdebi
+```
+Then go to "Files" right-click a .deb file. Click on "properties". Go to tab "open with". Click on gdebi package installer and click on "set as default". Be sure to do this in the "properties" window. Otherwise, you will not see the "set as default" option.
+
+**List of bugs**
+
+This is a list of all the software center bugs currently affecting me. Feel free add yourself to the affected list to get more traction
+
+   * [Free applications having "buy" button instead of "install"](https://bugs.launchpad.net/ubuntu/+source/software-center/+bug/968974) *Related:* [Why do I have to sign in into Ubuntu One when installing free apps](http://askubuntu.com/questions/319091/why-do-i-have-to-sign-into-ubunto-one-in-order-to-install-steam)
+
+
 
 # Restricted Extras
 
@@ -83,24 +101,6 @@ install the following components (very easy to do with playonlinux):
 ## Google-talk plugin
 GOOGLE TALK PLUGIN
 
-
-# Bugfixes
-
-**Software Center**
-
-**Workaround**
-The software center is still extremely buggy and in a poor state. It crashes a lot on .deb files from the internet. I recommend setting gdebi as default application to open .deb packages.
-
-```
-apt install gdebi
-```
-Then go to "Files" right-click a .deb file. Click on "properties". Go to tab "open with". Click on gdebi package installer and click on "set as default". Be sure to do this in the "properties" window. Otherwise, you will not see the "set as default" option.
-
-**List of bugs**
-
-This is a list of all the software center bugs currently affecting me. Feel free add yourself to the affected list to get more traction
-
-   * [Free applications having "buy" button instead of "install"](https://bugs.launchpad.net/ubuntu/+source/software-center/+bug/968974) *Related:* [Why do I have to sign in into Ubuntu One when installing free apps](http://askubuntu.com/questions/319091/why-do-i-have-to-sign-into-ubunto-one-in-order-to-install-steam)
 
 # Tweaks
 
