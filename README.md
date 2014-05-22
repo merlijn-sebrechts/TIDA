@@ -7,7 +7,7 @@ Things I Did After Installing Ubuntu. This is a reference for all the thing I do
 
 **Useful commands**
 
-```
+```bash
 lsusb
 dmesg | grep tty
 ubuntu-bug -w
@@ -52,6 +52,13 @@ This is a list of all the software center bugs currently affecting me. Feel free
 
 
 # Restricted Extras
+
+## HTML5 video in FireFox
+```bash
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get install gstreamer0.10-ffmpeg
+```
 
 ## DVD PLAYBACK
 
@@ -125,16 +132,20 @@ sudo apt purge bumblebee*
 sudo apt install nvidia-prime
 ```
 
-**Caffiene, don't sleep when flash video**
+**Caffiene, disables screensaver when app is fullscreen (like youtube video)**
 
 ```
 sudo add-apt-repository ppa:caffeine-developers/ppa
 sudo apt update; sudo apt install caffeine
 ```
 
-**Native GTK themes with qt**
-```
+**Native GTK themes with qt, and other things (like skype)**
+```bash
 sudo apt install gtk2-engines
+
+#only for 64 bit:
+sudo apt-get install gtk2-engines-murrine:i386
+sudo apt-get install gtk2-engines-pixbuf:i386
 ```
 
 
