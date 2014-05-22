@@ -56,8 +56,8 @@ This is a list of all the software center bugs currently affecting me. Feel free
 ## HTML5 video in FireFox
 ```bash
 sudo add-apt-repository ppa:mc3man/trusty-media
-sudo apt-get update
-sudo apt-get install gstreamer0.10-ffmpeg
+sudo apt update
+sudo apt install gstreamer0.10-ffmpeg
 ```
 
 ## DVD PLAYBACK
@@ -143,9 +143,12 @@ sudo apt update; sudo apt install caffeine
 ```bash
 sudo apt install gtk2-engines
 
-#only for 64 bit:
-sudo apt-get install gtk2-engines-murrine:i386
-sudo apt-get install gtk2-engines-pixbuf:i386
+# only for 64 bit:
+sudo apt install gtk2-engines-murrine:i386
+sudo apt install gtk2-engines-pixbuf:i386
+
+# indicator support for qt applications in 64-bit ubuntu
+sudo apt install sni-qt
 ```
 
 
