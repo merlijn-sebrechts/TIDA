@@ -16,6 +16,9 @@ ubuntu-bug -w
 # but apt does it better and with nicer output
 apt search
 apt install
+
+# have you tried to run a command but forgot "sudo"? "!!" means "previous command"
+sudo !!
 ```
 
 **Image editing**
@@ -26,6 +29,9 @@ To crop an image: right-click on it. Click on "open with" > "Shotwell viewer". T
 ```
 # To have tiling-like abilities:
 ctrl-alt-numpad_key
+
+# Select area to make screenshot from, screenshot is automatically saved in clipboard
+ctrl-shift-printscreen
 
 # To search in the applications menu (very handy in gimp!)
 press alt and start typing
