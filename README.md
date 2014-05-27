@@ -158,6 +158,17 @@ sudo apt install sni-qt
 ```
 
 
+# GOOD APPLICATIONS
+
+Pinta Image editor, paint(but better) for Linux
+
+```
+sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+sudo apt-get update
+sudo apt-get install pinta
+```
+
+[source](http://www.webupd8.org/2014/05/pinta-image-editor-15-released-with-new.html)
 
 # PROGRAM SPECIFIC TWEAKS
 
