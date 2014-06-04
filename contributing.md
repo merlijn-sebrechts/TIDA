@@ -12,7 +12,10 @@ bzr commit --fixes=lp:$BUGNUM
 
 # Software center
 ```Bash
+# branch the software-center code
 bzr branch lp:software-center
+
+# compile and run a testversion of the software-center
 cd software-center
 python setup.py build
 PYTHONPATH=. ./bin/software-center
