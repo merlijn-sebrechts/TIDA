@@ -284,8 +284,4 @@ https://help.ubuntu.com/community/CitrixICAClientHowTo
 
 http://ubuntuforums.org/showthread.php?t=2166020&page=4
 
-
-
-
-
-
+apt-file search
