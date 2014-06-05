@@ -272,6 +272,7 @@ libcurl3:i386
 libasound2-plugins:i386
 libcanberra-gtk-module:i386
 libnss3:i368
+unity-gtk2-module:i386
 ```
 
 ##CITRIX on 64-bit ubuntu
