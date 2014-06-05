@@ -264,7 +264,17 @@ sudo add-apt-repository ppa:atareao/atareao
 sudo apt update; sudo apt install touchpad-indicator
 ```
 
-##CITRIX
+## LONE SURVIVOR on 64-bit ubuntu 14.04
+
+```
+Dependencies:
+libcurl3:i386
+libasound2-plugins:i386
+libcanberra-gtk-module:i386
+libnss3:i368
+```
+
+##CITRIX on 64-bit ubuntu
 
 ```
 mkdir ica_temp
