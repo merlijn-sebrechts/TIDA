@@ -170,6 +170,13 @@ sudo apt-get install pinta
 
 [source](http://www.webupd8.org/2014/05/pinta-image-editor-15-released-with-new.html)
 
+
+VLSub, automatic subtitle download extention for vlc media player
+
+```
+sudo apt install vlc-plugin-vlsub
+```
+
 # PROGRAM SPECIFIC TWEAKS
 
 ##SUBLIME TEXT
