@@ -160,6 +160,15 @@ sudo apt install sni-qt
 
 # GOOD APPLICATIONS
 
+app grid: Better (but non-free) Software Center
+
+```
+sudo add-apt-repository -y ppa:appgrid/stable
+sudo apt-get update && sudo apt-get install appgrid
+```
+
+[source](http://www.omgubuntu.co.uk/2014/07/appgrid-1-5-0-ubuntu-software-alternative-new-look)
+
 Atraci: Spotify-like music player with youtube backend
 
 ```
