@@ -160,6 +160,16 @@ sudo apt install sni-qt
 
 # GOOD APPLICATIONS
 
+Atraci: Spotify-like music player with youtube backend
+
+```
+sudo add-apt-repository ppa:webupd8team/atraci
+sudo apt-get update
+sudo apt-get install atraci
+```
+[source](http://www.webupd8.org/2014/07/atraci-new-youtube-based-music-player.html)
+
+
 Pinta Image editor, paint(but better) for Linux
 
 ```
