@@ -88,11 +88,22 @@ Edit `~/.config/fontconfig/fonts.conf`
 
 Add following lines:
 ```
-<match target="font" >
-<edit name="embeddedbitmap" mode="assign">
-<bool>false</bool>
-</edit>
-</match>
+    <!-- Prevent Gnome from using embedded bitmaps in fonts like Calibri -->
+    <match target="font">
+        <edit name="embeddedbitmap" mode="assign"><bool>false</bool></edit>
+    </match>
+
+    <!-- Reject bitmap fonts in favour of Truetype, Postscript, etc. -->
+    <match target="font">
+        <selectfont><rejectfont><pattern>
+            <patelt name="scalable"><bool>false</bool></patelt>
+        </pattern></rejectfont></selectfont>
+    </match>
+
+    <!-- Substitute truetype fonts for bitmap ones -->
+    <match target="font">
+        <edit name="prefer_outline"><bool>true</bool></edit>
+    </match>
 ```
 
 ## MS Office
@@ -160,6 +171,13 @@ sudo apt install sni-qt
 
 # GOOD APPLICATIONS
 
+Pinta image editor, Linux paint alternative
+
+```
+sudo apt install pinta
+```
+
+
 app grid: Better (but non-free) Software Center
 
 ```
@@ -168,26 +186,6 @@ sudo apt-get update && sudo apt-get install appgrid
 ```
 
 [source](http://www.omgubuntu.co.uk/2014/07/appgrid-1-5-0-ubuntu-software-alternative-new-look)
-
-Atraci: Spotify-like music player with youtube backend
-
-```
-sudo add-apt-repository ppa:webupd8team/atraci
-sudo apt-get update
-sudo apt-get install atraci
-```
-[source](http://www.webupd8.org/2014/07/atraci-new-youtube-based-music-player.html)
-
-
-Pinta Image editor, paint(but better) for Linux
-
-```
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
-sudo apt-get update
-sudo apt-get install pinta
-```
-
-[source](http://www.webupd8.org/2014/05/pinta-image-editor-15-released-with-new.html)
 
 
 VLSub, automatic subtitle download extention for vlc media player
