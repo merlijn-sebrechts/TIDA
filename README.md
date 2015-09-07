@@ -177,6 +177,13 @@ Pinta image editor, Linux paint alternative
 sudo apt install pinta
 ```
 
+WPS Office: MS office alternative (with ribbon interface) (no odf support)
+http://wps-community.org/
+settings > save > save in word 2003 format
+
+
+
+
 
 app grid: Better (but non-free) Software Center
 
