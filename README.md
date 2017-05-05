@@ -88,22 +88,26 @@ Edit `~/.config/fontconfig/fonts.conf`
 
 Add following lines:
 ```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<!-- $XDG_CONFIG_HOME/fontconfig/fonts.conf for per-user font configuration -->
+<!-- http://www.freedesktop.org/software/fontconfig/fontconfig-user.html -->
+<fontconfig>
     <!-- Prevent Gnome from using embedded bitmaps in fonts like Calibri -->
     <match target="font">
         <edit name="embeddedbitmap" mode="assign"><bool>false</bool></edit>
     </match>
 
     <!-- Reject bitmap fonts in favour of Truetype, Postscript, etc. -->
-    <match target="font">
-        <selectfont><rejectfont><pattern>
-            <patelt name="scalable"><bool>false</bool></patelt>
-        </pattern></rejectfont></selectfont>
-    </match>
+    <selectfont><rejectfont><pattern>
+        <patelt name="scalable"><bool>false</bool></patelt>
+    </pattern></rejectfont></selectfont>
 
     <!-- Substitute truetype fonts for bitmap ones -->
     <match target="font">
         <edit name="prefer_outline"><bool>true</bool></edit>
     </match>
+</fontconfig>
 ```
 
 ## MS Office
