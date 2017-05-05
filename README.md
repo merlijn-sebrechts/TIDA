@@ -1,4 +1,4 @@
-TIDA: Ubuntu 14.04 Trusty Tahr
+TIDA: Ubuntu
 ====
 
 Things I Did After Installing Ubuntu. This is a reference for all the thing I do after a clean install of Ubuntu.
@@ -59,13 +59,6 @@ This is a list of all the software center bugs currently affecting me. Feel free
 
 # Restricted Extras
 
-## HTML5 video in FireFox
-```bash
-sudo add-apt-repository ppa:mc3man/trusty-media
-sudo apt update
-sudo apt install gstreamer0.10-ffmpeg
-```
-
 ## DVD PLAYBACK
 
 https://help.ubuntu.com/community/RestrictedFormats/PlayingDVDs
@@ -122,10 +115,6 @@ install the following components (very easy to do with playonlinux):
 
 [source](http://rmitc.org/2013/04/ultimate-microsoft-office-2010-installation-on-ubuntu/comment-page-1)
 
-## Silverlight
-
-[source](http://www.webupd8.org/2013/08/pipelight-use-silverlight-in-your-linux.html)
-
 ## Google-talk plugin
 GOOGLE TALK PLUGIN
 
@@ -146,18 +135,11 @@ sudo apt install tlp tlp-rdw
 sudo tlp start
 ```
 
-**Nvidia Optimus support**
-
-```
-sudo apt purge bumblebee*
-sudo apt install nvidia-prime
-```
 
 **Caffiene, disables screensaver when app is fullscreen (like youtube video)**
 
 ```
-sudo add-apt-repository ppa:caffeine-developers/ppa
-sudo apt update; sudo apt install caffeine
+sudo apt install caffeine
 ```
 
 **Native GTK themes with qt, and other things (like skype)**
@@ -181,24 +163,6 @@ Pinta image editor, Linux paint alternative
 sudo apt install pinta
 ```
 
-WPS Office: MS office alternative (with ribbon interface) (no odf support)
-http://wps-community.org/
-settings > save > save in word 2003 format
-
-
-
-
-
-app grid: Better (but non-free) Software Center
-
-```
-sudo add-apt-repository -y ppa:appgrid/stable
-sudo apt-get update && sudo apt-get install appgrid
-```
-
-[source](http://www.omgubuntu.co.uk/2014/07/appgrid-1-5-0-ubuntu-software-alternative-new-look)
-
-
 VLSub, automatic subtitle download extention for vlc media player
 
 ```
@@ -206,31 +170,6 @@ sudo apt install vlc-plugin-vlsub
 ```
 
 # PROGRAM SPECIFIC TWEAKS
-
-##SUBLIME TEXT
-
-**Install**
-
-```
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo apt update
-sudo apt install sublime-text-installer
-```
-
-**Build shell**
-
-```
-{
-    "cmd"       : ["$file"],
-    "selector"  : "source.shell",
-    "shell"     : "bash"
-}
-```
-
-[source](http://www.webupd8.org/2013/11/y-ppa-manager-0992-adds-support-for.html)
-
-**Build c++**
-sudo apt install build-essential
 
 #GIT
 **Use colors**
@@ -248,17 +187,6 @@ appearence > behaviour
 
 **Language and regional settings**
 
-**Webgl support chrome**
-
-Step 1: Open Google Chrome
-
-Step 2: Type chrome://flags in the address bar
-
-Step 3: Press Ctrl + f and type ” Rendering list “, “Override software rendering list” should come up, Now click on Enable and restart the browser.
-
-Now check chrome://gpu/
-
-
 #Security
 
 ```
@@ -266,73 +194,9 @@ sudo ufw enable
 sudo apt install gufw
 ```
 
-#VVS	
-##VPN
+#VPN
 
 ```
 sudo apt install network-manager-openvpn network-manager-openvpn-gnome
 ```
 in network manager => vpn => add vpn
-
-##Ipv6
-
-```
-sudo apt install aiccu
-```
-sudo aiccu start
-
-
-#UGENT
-
-`sudo apt install network-manager-vpnc`
-
-[source](https://helpdesk.ugent.be/vpn/linux.php)
-
-
-#DEPRECATED
-
-Did not use anymore, maybe in the future?
-
-## disable touchpad when external mouse
-```
-sudo add-apt-repository ppa:atareao/atareao
-sudo apt update; sudo apt install touchpad-indicator
-```
-
-## LONE SURVIVOR on 64-bit ubuntu 14.04
-
-```
-Dependencies:
-libcurl3:i386
-libasound2-plugins:i386
-libcanberra-gtk-module:i386
-libnss3:i368
-unity-gtk2-module:i386
-```
-
-##CITRIX on 64-bit ubuntu
-
-```
-mkdir ica_temp
-dpkg-deb -x icaclient_ ica_temp
-dpkg-deb --control icaclient_ ica_temp/DEBIAN
-sudo gedit ica_temp/DEBIAN/control
-	Depends: libc6-i386 (>= 2.7-1), lib32z1, nspluginwrapper
-dpkg -b ica_temp icaclient-modified.deb
-sudo dpkg -i icaclient-modified.deb
-sudo apt install -f
-sudo gedit /var/lib/dpkg/info/icaclient.postinst
-	echo $Arch|grep -E "i[0-9]86|x86_64" >/dev/null
-sudo apt install -f
-sudo cp /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts
-```
-https://help.ubuntu.com/community/CitrixICAClientHowTo
-
-http://ubuntuforums.org/showthread.php?t=2166020&page=4
-
-apt-file search
-
-
-
-
-http://www.perlmonks.org/?node_id=935014
